@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KASHAF Beauty Studio — Canal Road, Gulshan | Rahim Yar Khan</title>
+<meta name="description" content="Kashaf Beauty Studio, a beauty salon on Canal Rd, Gulshan, Rahim Yar Khan. Rated 4.8 stars on Google. Call +92 301 8672680.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--blk:#0a0a0a;--wht:#ffffff;--paper:#f4f4f2;--coral:#ff4b2e;--grey:#6d6d6d;--line:#0a0a0a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--wht);color:var(--blk);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.anton{font-family:'Anton',sans-serif;text-transform:uppercase}
+
+/* top strip */
+.strip{background:var(--blk);color:#fff;display:flex;justify-content:space-between;gap:14px;padding:9px clamp(16px,4vw,48px);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.strip .r{color:var(--coral)}
+@media(max-width:640px){.strip .mid{display:none}}
+
+/* header */
+header{display:flex;justify-content:space-between;align-items:center;padding:20px clamp(16px,4vw,48px);border-bottom:3px solid var(--blk);position:sticky;top:0;background:#fff;z-index:40}
+.logo{font-family:'Anton',sans-serif;font-size:1.7rem;letter-spacing:.06em}
+.logo i{font-style:normal;color:var(--coral)}
+nav.desk{display:flex;gap:30px;font-size:.78rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+nav.desk a{border-bottom:3px solid transparent;padding-bottom:3px}
+nav.desk a:hover{border-color:var(--coral)}
+.hcall{background:var(--blk);color:#fff;padding:11px 22px;font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;transition:.25s}
+.hcall:hover{background:var(--coral)}
+@media(max-width:760px){nav.desk{display:none}}
+
+/* hero — swiss broken type */
+.hero{padding:clamp(30px,6vw,70px) clamp(16px,4vw,48px) 0;position:relative}
+.hero .kick{display:inline-block;background:var(--coral);color:#fff;font-weight:800;font-size:.75rem;letter-spacing:.26em;text-transform:uppercase;padding:8px 14px}
+.hero h1{font-family:'Anton',sans-serif;font-size:clamp(3.6rem,13vw,10.5rem);line-height:.94;letter-spacing:.005em;text-transform:uppercase;margin-top:22px}
+.hero h1 .out{display:block;color:transparent;-webkit-text-stroke:2.5px var(--blk)}
+.hero h1 .coral{color:var(--coral)}
+.hero-row{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(20px,4vw,50px);margin-top:34px;align-items:start}
+@media(max-width:800px){.hero-row{grid-template-columns:1fr}}
+.hero-row p{font-size:1.06rem;line-height:1.75;color:#2b2b2b;max-width:520px}
+.hero-row p b{background:var(--blk);color:#fff;padding:0 6px}
+.score{border:3px solid var(--blk);padding:22px 24px;display:flex;align-items:center;gap:20px;background:var(--paper);box-shadow:10px 10px 0 var(--coral)}
+.score .n{font-family:'Anton',sans-serif;font-size:3.4rem;line-height:1}
+.score .t{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;line-height:1.7}
+.hero-cta{display:flex;gap:0;margin-top:36px;flex-wrap:wrap}
+.hero-cta a{padding:16px 30px;font-weight:800;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;border:3px solid var(--blk);transition:.25s}
+.hero-cta .b1{background:var(--blk);color:#fff}
+.hero-cta .b1:hover{background:var(--coral);border-color:var(--coral)}
+.hero-cta .b2{background:#fff;color:var(--blk);border-left:none}
+.hero-cta .b2:hover{background:var(--blk);color:#fff}
+@media(max-width:560px){.hero-cta .b2{border-left:3px solid var(--blk);margin-top:-3px}}
+
+/* outline marquee */
+.marq{margin-top:clamp(36px,6vw,64px);border-top:3px solid var(--blk);border-bottom:3px solid var(--blk);overflow:hidden;padding:10px 0;background:#fff}
+.marq div{display:flex;width:max-content;animation:slide 22s linear infinite;white-space:nowrap;font-family:'Anton',sans-serif;font-size:1.9rem;text-transform:uppercase}
+.marq span{padding:0 18px}
+.marq .o{color:transparent;-webkit-text-stroke:1.5px var(--blk)}
+.marq .c{color:var(--coral)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* services — inversion rows */
+section{padding:clamp(54px,8vw,90px) clamp(16px,4vw,48px);max-width:1240px;margin:auto}
+.sec-t{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:8px}
+.sec-t .idx{font-family:'Anton',sans-serif;color:var(--coral);font-size:1.1rem}
+.sec-t h2{font-family:'Anton',sans-serif;font-size:clamp(2.2rem,6vw,4rem);text-transform:uppercase;line-height:1}
+.sec-sub{color:var(--grey);max-width:560px;line-height:1.7;margin-bottom:36px}
+.rows{border-top:3px solid var(--blk)}
+.srow{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;padding:24px 14px;border-bottom:2px solid #dcdcdc;transition:background .25s,color .25s;background:#fff}
+.srow .no{font-family:'Anton',sans-serif;font-size:1rem;opacity:.45}
+.srow h3{font-size:clamp(1.25rem,3vw,1.7rem);font-weight:800;letter-spacing:-.01em;text-transform:uppercase}
+.srow p{color:var(--grey);font-size:.94rem;margin-top:3px;max-width:520px;line-height:1.6;transition:color .25s}
+.srow .go{font-weight:800;font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;border:2px solid var(--blk);padding:9px 16px;white-space:nowrap;transition:.25s}
+.srow:hover{background:var(--blk);color:#fff}
+.srow:hover p{color:#cfcfcf}
+.srow:hover .go{border-color:var(--coral);background:var(--coral);color:#fff}
+.srow:hover .no{color:var(--coral);opacity:1}
+@media(max-width:560px){.srow{grid-template-columns:40px 1fr}.srow .go{display:none}}
+
+/* broken grid about */
+.grid-x{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.cell{border:3px solid var(--blk);padding:28px 24px}
+.cell.blk{background:var(--blk);color:#fff}
+.cell.coral{background:var(--coral);color:#fff;border-color:var(--coral)}
+.cell h3{font-family:'Anton',sans-serif;font-size:1.5rem;text-transform:uppercase;margin-bottom:10px}
+.cell p{line-height:1.7;font-size:.97rem}
+.cell .big{font-family:'Anton',sans-serif;font-size:3.2rem;line-height:1}
+.c-span7{grid-column:span 7}.c-span5{grid-column:span 5}.c-span4{grid-column:span 4}.c-span8{grid-column:span 8}
+.c-off{margin-top:26px}
+@media(max-width:800px){.c-span7,.c-span5,.c-span4,.c-span8{grid-column:span 12}.c-off{margin-top:0}}
+
+/* visit */
+.visit{background:var(--blk);color:#fff;padding:clamp(50px,8vw,84px) clamp(16px,4vw,48px)}
+.visit-in{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,60px)}
+@media(max-width:840px){.visit-in{grid-template-columns:1fr}}
+.visit h2{font-family:'Anton',sans-serif;font-size:clamp(2.4rem,6vw,4.2rem);text-transform:uppercase;line-height:1}
+.visit h2 .o{color:transparent;-webkit-text-stroke:2px #fff}
+.visit p{color:#c9c9c9;line-height:1.75;margin-top:16px;max-width:480px}
+.vcard{border:2px solid #333;padding:28px}
+.vcard .row{padding:14px 0;border-bottom:1px dashed #3a3a3a;display:flex;gap:16px}
+.vcard .row:last-child{border-bottom:none}
+.vcard b{color:var(--coral);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;min-width:74px;padding-top:3px}
+.vcard span{line-height:1.6}
+.vcta{display:flex;gap:0;margin-top:28px;flex-wrap:wrap}
+.vcta a{padding:15px 26px;font-weight:800;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;transition:.25s}
+.vcta .w{background:#25d366;color:#04150a}
+.vcta .w:hover{background:#1eb456}
+.vcta .m{border:2px solid #fff;color:#fff;margin-left:12px}
+.vcta .m:hover{background:#fff;color:#000}
+@media(max-width:560px){.vcta .m{margin-left:0;margin-top:12px}}
+
+footer{padding:30px clamp(16px,4vw,48px) 108px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.84rem;color:var(--grey);max-width:1240px;margin:auto}
+footer .fl{font-family:'Anton',sans-serif;color:var(--blk);font-size:1.1rem;text-transform:uppercase}
+footer .fl i{font-style:normal;color:var(--coral)}
+.disc{width:100%;font-size:.76rem}
+
+/* mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;border-top:3px solid var(--blk)}
+.mbar a{flex:1;text-align:center;padding:15px;font-weight:800;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase}
+.mbar .c{background:var(--blk);color:#fff}
+.mbar .w{background:#25d366;color:#04150a}
+@media(max-width:760px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+<div class="strip"><span>Kashaf Beauty Studio</span><span class="mid">Canal Rd · Gulshan · Rahim Yar Khan</span><span class="r">★ 4.8 — 24 Reviews</span></div>
+
+<header>
+  <a class="logo" href="#top">KASHAF<i>.</i></a>
+  <nav class="desk">
+    <a href="#services">Services</a>
+    <a href="#studio">Studio</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <a class="hcall" href="tel:+923018672680">Call Now</a>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <span class="kick">Beauty Salon — Gulshan, RYK</span>
+    <h1>Beauty<span class="out">Studio</span><span class="coral">Kashaf</span></h1>
+    <div class="hero-row">
+      <div>
+        <p>A sharp little studio on Canal Road for makeup, hair and skin — <b>personal, precise, unhurried.</b> No bazaar rush. Just you, your stylist, and a mirror that finally agrees with you.</p>
+        <div class="hero-cta">
+          <a class="b1" href="https://wa.me/923018672680" target="_blank" rel="noopener">WhatsApp the Studio</a>
+          <a class="b2" href="#services">Services ↓</a>
+        </div>
+      </div>
+      <div class="score">
+        <span class="n">4.8</span>
+        <span class="t">Star rating<br>on Google<br>24 reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="marq" aria-hidden="true"><div>
+    <span>Makeup</span><span class="o">Hair</span><span class="c">Skin</span><span class="o">Bridal</span><span>Nails</span><span class="o">Mehndi</span>
+    <span>Makeup</span><span class="o">Hair</span><span class="c">Skin</span><span class="o">Bridal</span><span>Nails</span><span class="o">Mehndi</span>
+  </div></div>
+
+  <section id="services">
+    <div class="sec-t"><span class="idx">/ 01</span><h2>Services</h2></div>
+    <p class="sec-sub">Six essentials, done properly. Hover a row, tap it, and ask the studio directly — services and prices are confirmed on WhatsApp or call.</p>
+    <div class="rows">
+      <a class="srow" href="https://wa.me/923018672680?text=I%20want%20to%20ask%20about%20Bridal%20Makeup" target="_blank" rel="noopener"><span class="no">01</span><span><h3>Bridal Makeup</h3><p>Full bridal looks for the big day — base, eyes, hair and finishing detail.</p></span><span class="go">Ask →</span></a>
+      <a class="srow" href="https://wa.me/923018672680?text=I%20want%20to%20ask%20about%20Party%20Makeup" target="_blank" rel="noopener"><span class="no">02</span><span><h3>Party Makeup</h3><p>Event-ready makeup, from clean and minimal to full glam.</p></span><span class="go">Ask →</span></a>
+      <a class="srow" href="https://wa.me/923018672680?text=I%20want%20to%20ask%20about%20Hair%20services" target="_blank" rel="noopener"><span class="no">03</span><span><h3>Hair</h3><p>Cuts, colour, styling and care — shaped to your face, not a template.</p></span><span class="go">Ask →</span></a>
+      <a class="srow" href="https://wa.me/923018672680?text=I%20want%20to%20ask%20about%20Facials%20and%20Skin%20Care" target="_blank" rel="noopener"><span class="no">04</span><span><h3>Skin &amp; Facials</h3><p>Cleansing and brightening facials for a fresh, even glow.</p></span><span class="go">Ask →</span></a>
+      <a class="srow" href="https://wa.me/923018672680?text=I%20want%20to%20ask%20about%20Manicure%20and%20Pedicure" target="_blank" rel="noopener"><span class="no">05</span><span><h3>Nails</h3><p>Manicure and pedicure — tidy, polished, finished properly.</p></span><span class="go">Ask →</span></a>
+      <a class="srow" href="https://wa.me/923018672680?text=I%20want%20to%20ask%20about%20Mehndi%20and%20Grooming" target="_blank" rel="noopener"><span class="no">06</span><span><h3>Mehndi &amp; Grooming</h3><p>Henna for brides and occasions, plus waxing and threading.</p></span><span class="go">Ask →</span></a>
+    </div>
+  </section>
+
+  <section id="studio" style="padding-top:0">
+    <div class="sec-t"><span class="idx">/ 02</span><h2>The Studio</h2></div>
+    <p class="sec-sub">House No. 7, Street No. 1, Canal Rd, Gulshan — a home-based studio setting in Rahim Yar Khan, rated 4.8 stars by its clients on Google.</p>
+    <div class="grid-x">
+      <div class="cell blk c-span7"><span class="big">4.8 ★</span><h3 style="margin-top:12px">Rated by clients</h3><p>24 Google reviews behind that score — earned one appointment at a time in Gulshan.</p></div>
+      <div class="cell c-span5 c-off"><h3>Quiet by design</h3><p>A studio at a house address on Canal Road — a calmer, more private alternative to a walk-in bazaar salon.</p></div>
+      <div class="cell c-span4"><h3>Book first</h3><p>Call or WhatsApp ahead so your slot is yours — no waiting on a bench.</p></div>
+      <div class="cell coral c-span8"><h3>One visit, full look</h3><p>Makeup, hair, skin, nails and mehndi under one roof — bridal and party prep without running across town.</p></div>
+    </div>
+  </section>
+
+  <div class="visit" id="visit">
+    <div class="visit-in">
+      <div>
+        <h2>Get <span class="o">Booked</span> In</h2>
+        <p>Message on WhatsApp or call the studio to plan your visit. Walk-ins depend on the day's bookings — a quick message first is always smarter.</p>
+        <div class="vcta">
+          <a class="w" href="https://wa.me/923018672680" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="m" href="https://www.google.com/maps/search/?api=1&amp;query=Kashaf+Beauty+Studio+Rahim+Yar+Khan" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+      </div>
+      <div class="vcard">
+        <div class="row"><b>Studio</b><span>Kashaf Beauty Studio — Beauty salon</span></div>
+        <div class="row"><b>Address</b><span>House No. 7, Street No. 1, Canal Rd, Gulshan, Rahim Yar Khan, 64200, Pakistan</span></div>
+        <div class="row"><b>Phone</b><span><a href="tel:+923018672680">+92 301 8672680</a></span></div>
+        <div class="row"><b>Rating</b><span>4.8 stars · 24 Google reviews</span></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span class="fl">Kashaf<i>.</i></span>
+  <span>Canal Rd · Gulshan · Rahim Yar Khan</span>
+  <span><a href="tel:+923018672680">+92 301 8672680</a></span>
+  <p class="disc">Sample website concept created for Kashaf Beauty Studio. Details shown are from the business's public Google listing; please confirm services, prices and timings with the business.</p>
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+923018672680">Call Now</a>
+  <a class="w" href="https://wa.me/923018672680" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</body>
+</html>
